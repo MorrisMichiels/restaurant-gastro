@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>www.atmosphere.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Gastro Atmosphere</h1>
+        <p>Restaurant gastronomique à Dubai</p>
+    </div>
+</div>
+
+<div class="scroll-down">
+    <span></span>
+</div>
+</section>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="menu.html">Menu</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>À propos</h2>
+    <p><strong>Réservation obligatoire </strong>(sans billet d’entrée aux tours panoramiques) pour restaurant ou lounge, surtout en haute saison ou pour dîner/afternoon tea.</p>
+    <br>
+    <p>Atmosphere Burj Khalifa, l’un des restaurants les plus iconiques de Dubaï, situé au <strong>122ᵉ étage du Burj Khalifa.</strong> Atmosphere est considéré comme le plus haut restaurant du monde (442 m d’altitude), offrant des vues panoramiques à 360° sur Dubaï, le golfe Persique et l’horizon urbain.</p>
+    <br>
+    <p>Le restaurant, ouvert initialement en 2011, a été rénové et relancé récemment, avec un design chic et moderne et un <strong>chef expérimenté.</strong></p>
+</section>
+
+<div class="cookie-tab" id="cookieTab">
+    🍪 Cookies
+  </div>
+  
+  <div class="cookie-menu" id="cookieMenu">
+    <h3>Préférences Cookies</h3>
+    <p>Ce site utilise des cookies pour améliorer votre expérience.</p>
+    <div class="menu-buttons">
+      <button class="accept">Accepter tous</button>
+      <button class="refuse">Refuser</button>
+      <button class="close" id="closeMenu">✖</button>
+    </div>
+  </div>  
+  
+
+<footer>
+all rights reserved to Morris
+</footer>
+
+
+<script>
+    const cookieTab = document.getElementById("cookieTab");
+    const cookieMenu = document.getElementById("cookieMenu");
+    const closeMenu = document.getElementById("closeMenu");
+    const acceptBtn = document.querySelector(".accept");
+    const refuseBtn = document.querySelector(".refuse");
+  
+    cookieTab.addEventListener("click", () => {
+      cookieMenu.style.display = "block";
+    });
+  
+    closeMenu.addEventListener("click", () => {
+      cookieMenu.style.display = "none";
+    });
+
+    acceptBtn.addEventListener("click", () => {
+      cookieMenu.style.display = "none";
+    });
+  
+    refuseBtn.addEventListener("click", () => {
+      cookieMenu.style.display = "none";
+    });
+  </script>  
+  
+</body>
+</html>
